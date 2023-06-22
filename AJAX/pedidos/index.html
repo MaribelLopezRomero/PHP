@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .hidden {
+        visibility: hidden;
+    }
+
+    .visible {
+        visibility: visible;
+
+    }
+
+    fieldset {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+    }
+
+    form{
+        margin-bottom: 20px;
+    }
+
+    .div{
+       margin-bottom: 10px;
+    }
+</style>
+
+<body>
+
+    <h3>Selecciones tres articulos</h3>
+
+    <form class="form" action="">
+        <div class="div">
+        </div>
+        <input class="enviar" type="submit" value="Realizar pedido">
+    </form>
+
+
+    <form class="form1 hidden" action="">
+
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="">Introduce un nombre</label>
+            <input name="nombre" type="text">
+            <label for="">Introduce una direccion</label>
+            <input name="direccion" type="text">
+            <label for="">Introduce un telefono</label>
+            <input name="telefono" type="number">
+            <input class="enviarDatos" type="submit" value="Enviar">
+        </fieldset>
+
+    </form>
+
+    <p class="mensaje"></p>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
